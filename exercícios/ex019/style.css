@@ -1,0 +1,85 @@
+
+body
+{
+    background-image: linear-gradient( to bottom, rgb(50, 50, 255), rgb(255, 190, 70)75%);
+    /*background-attachment: fixed;*/
+
+    font-size: 24px; /*Tamanho da fonte*/
+    font-family: fantasy; /*Escolher fonte*/
+    
+}
+
+main
+{
+    background-color: white;
+    border-radius: 20px;
+    width: 1150px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1
+{
+    font-style: italic; /*Deixar em itálico*/
+    font-weight: lighter; /*Deixar a fonte fina*/
+    color: rgb(0, 0, 0); /*Definir cor do texto*/
+
+    text-align: center;
+
+}
+
+h1#principal
+{
+    text-align: center;
+}
+
+.HTML1
+{
+    color: rgb(25, 25, 255);
+}
+
+.CSS1
+{
+    color: rgb(255, 171, 15);
+}
+
+h2
+{
+    font-style: italic;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+}
+
+/*
+.HTML2
+{
+    color: rgb(0, 0, 85);
+}
+*/
+/*
+.CSS2
+{
+    color: rgb(124, 81, 0);
+}
+*/
+
+p
+{
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.verde
+{
+    color: rgb(24, 255, 24)
+}
+
+.amarelo
+{
+    color: rgb(255, 255, 20);
+}
+
+.vermelho
+{
+    color: rgb(255, 16, 16);
+}
