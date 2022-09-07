@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold
+        }
+
+        h1
+        {
+            margin-left: 110px;
+        }
+
+        table
+        {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption
+        {
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: rgb(35, 35, 35);
+            border: 1px solid black;
+            color: white;
+        }
+
+        thead, tfoot
+        {
+            background-color: crimson;
+            color: white;
+        }
+
+        thead th, tfoot th
+        {
+            text-decoration: underline;
+        }
+
+        tr th#posicao
+        {
+            width: 80px;
+        }
+
+        tr th#estado
+        {
+            width: 350px;
+        }
+
+        tr th#populacao
+        {
+            width: 170px;
+        }
+
+        tbody tr:hover
+        {
+            background-color: rgb(255, 213, 226);
+            transition-duration: 300ms;
+            text-decoration: underline;
+        }
+
+        td, th
+        {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.nome
+        {
+            text-align: center;
+        }
+
+        td.numero
+        {
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Uso de Tabelas Grandes</h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+
+        <caption>População das Unidades Federativas</caption>
+
+        <thead>
+
+            <tr>
+                <th scope="col" id="posicao">Posição</th>
+                <th scope="col" id="estado">Estado</th>
+                <th scope="col" id="populacao">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td class="nome">1º</td>
+                <td class="nome">São Paulo</td>
+                <td class="numero">46 649 132</td>
+            </tr>
+
+            <tr>
+                <td class="nome">2º</td>
+                <td class="nome">Minas Gerais</td>
+                <td class="numero">21 411 923</td>
+            </tr>
+
+            <tr>
+                <td class="nome">3º</td>
+                <td class="nome">Rio de Janeiro</td>
+                <td class="numero">17 463 349</td>
+            </tr>
+
+            <tr>
+                <td class="nome">4º</td>
+                <td class="nome">Bahia</td>
+                <td class="numero">14 985 284</td>
+            </tr>
+
+            <tr>
+                <td class="nome">5º</td>
+                <td class="nome">Paraná</td>
+                <td class="numero">11 597 484</td>
+            </tr>
+
+            <tr>
+                <td class="nome">6º</td>
+                <td class="nome">Rio Grande do Sul</td>
+                <td class="numero">11 466 630</td>
+            </tr>
+
+            <tr>
+                <td class="nome">7º</td>
+                <td class="nome">Pernambuco</td>
+                <td class="numero">9 674 793</td>
+            </tr>
+
+            <tr>
+                <td class="nome">8º</td>
+                <td class="nome">Ceará</td>
+                <td class="numero">9 240 580</td>
+            </tr>
+
+            <tr>
+                <td class="nome">9º</td>
+                <td class="nome">Pará</td>
+                <td class="numero">8 777 124</td>
+            </tr>
+
+            <tr>
+                <td class="nome">10º</td>
+                <td class="nome">Santa Catarina</td>
+                <td class="numero">7 338 473</td>
+            </tr>
+
+            <tr>
+                <td class="nome">11º</td>
+                <td class="nome">Goiás</td>
+                <td class="numero">7 206 589</td>
+            </tr>
+
+            <tr>
+                <td class="nome">12º</td>
+                <td class="nome">Maranhão</td>
+                <td class="numero">7 153 262</td>
+            </tr>
+
+            <tr>
+                <td class="nome">13º</td>
+                <td class="nome">Amazonas</td>
+                <td class="numero">4 269 995</td>
+            </tr>
+
+            <tr>
+                <td class="nome">14º</td>
+                <td class="nome">Espírito Santo</td>
+                <td class="numero">4 108 508</td>
+            </tr>
+
+            <tr>
+                <td class="nome">15º</td>
+                <td class="nome">Paraíba</td>
+                <td class="numero">4 059 905</td>
+            </tr>
+
+            <tr>
+                <td class="nome">16º</td>
+                <td class="nome">Mato Grosso</td>
+                <td class="numero">3 567 234</td>
+            </tr>
+
+            <tr>
+                <td class="nome">17º</td>
+                <td class="nome">Rio Grande do Norte</td>
+                <td class="numero">3 560 903</td>
+            </tr>
+
+            <tr>
+                <td class="nome">18º</td>
+                <td class="nome">Alagoas</td>
+                <td class="numero">3 365 351</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+                <th scope="row" id="totalhabitantes">Total de Habitantes</th>
+                <td class="numero" id="contagem">195 896 519</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
