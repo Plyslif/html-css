@@ -32,11 +32,12 @@
 
     <h1>Meu Primeiro Formulário</h1>
 
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="get">
         <!-- autocomplete="off" para desativar o corretor de login -->
+        <!-- method="get" para aparecer os arquivos do formulário na url e "post" para esconder -->
 
         <p>
-            <label for="">Nome:</label> 
+            <label for="inome">Nome:</label> 
         </p>
 
         <p>
@@ -44,7 +45,7 @@
         </p>
 
         <p>
-            Sobrenome: 
+            <label for="isobrenome">Sobrenome:</label> 
         </p>
 
         <p>
